@@ -79,13 +79,14 @@
     <input type="button" value="Create" class="btn btn-info col-md-2" onclick="test();">
 <script>
 function test(){
-        var DAPP_ID = '27566d2d1464d1ca9964662027c4ac317bf3d6fcd1f23dc97ecabd1975b8dd09';
-        //  window.location.pathname.split('/')[2];
+        var DAPP_ID =  window.location.pathname.split('/')[2]; 
+        //'27566d2d1464d1ca9964662027c4ac317bf3d6fcd1f23dc97ecabd1975b8dd09';
+        
          
   //      console.log("DAPP_ID: "+DAPP_ID);
 //         var DAPP_ID = window.location.pathname.split('/')[2];
        // var BASE_URL = '/api/dapps/' + DAPP_ID;
-       var BASE_URL = 'http://localhost:9305/api/dapps/' + DAPP_ID;
+       var BASE_URL = 'http://54.251.138.1:9305/api/dapps/' + DAPP_ID;
 
 //ddress,name,id,university,coursename,date,certid
         var date1   = document.getElementById("txtdate1").value;
@@ -96,7 +97,7 @@ function test(){
         var coursename = document.getElementById("txtcourse").value; // coursename
          var dateofissue    = document.getElementById("txtdate2").value;  //date of issue 	
         //var secret  = document.getElementById("txtsecret").value;
-        var secret = 'offer cry duck relief work nerve concert penalty demand impulse bonus vague';
+        var secret = 'dance table casual identify staff acquire thought expire merit capable carry stem';
         var enrollmentId    = document.getElementById("txtEID").value;//enrollmentID 
           //address,name,id,university,coursename,dateofissue,enrollmentId
 

@@ -4,6 +4,10 @@ module.exports = async function () {
 
   app.registerContract(1000, 'certificate.issue_certificate')
   app.registerContract(1001, 'certificate.sign')
+  // app.registerContract(1002, 'certificate.balanceOf')
+  // app.registerContract(1003, 'certificate.transferFrom')
+  // app.registerContract(1004, 'certificate.mint')
+  app.registerContract(1005, 'payments.pay')
 
 
   app.events.on('newBlock', (block) => {

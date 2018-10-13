@@ -42,6 +42,7 @@
     let secret = 'offer cry duck relief work nerve concert penalty demand impulse bonus vague';
     function signBytes(bytes, secret) {
       let keys = AschJS.crypto.getKeys(secret)
+      console.log("signature is: "+ AschJS.crypto.signBytes(bytes, keys));
       return AschJS.crypto.signBytes(bytes, keys)
     }
     

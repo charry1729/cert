@@ -17,5 +17,7 @@ module.exports = {
     if (!exists) return 'Address not exists' 
     app.sdb.update('Domain', { ip: ip }, { address: address })
   }
-
 }   
+
+
+
